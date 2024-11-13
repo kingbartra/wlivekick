@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "W Live kick",
+    "version": "1.0",
+    "description": "Recibe una notificación cuando West prenda stream.",
+    "permissions": ["alarms", "notifications", "storage", "activeTab", "scripting"],
+    "background": {
+      "service_worker": "js/background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      },
+    "host_permissions": [
+      "https://kick.com/*"
+    ]
+  }
+  
